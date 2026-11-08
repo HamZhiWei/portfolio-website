@@ -1,0 +1,22 @@
+import type { CSSProperties, ReactNode } from 'react'
+
+export type BorderGlowProps = {
+  children?: ReactNode
+  className?: string
+  innerClassName?: string
+  edgeSensitivity?: number
+  glowColor?: string
+  backgroundColor?: string
+  borderRadius?: number
+  glowRadius?: number
+  glowIntensity?: number
+  coneSpread?: number
+  animated?: boolean
+  colors?: string[]
+  fillOpacity?: number
+  style?: CSSProperties
+}
+
+declare const BorderGlow: (props: BorderGlowProps) => ReactNode
+
+export default BorderGlow

@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我",
+    "projects": "项目",
+    "skills": "技能",
+    "contact": "联系"
+  },
+  "hero": {
+    "title": "首页介绍",
+    "placeholder": "Hero 区块即将上线。"
+  },
+  "about": {
+    "title": "关于我",
+    "eyebrow": "认识我",
+    "introTitle": "简介",
+    "intro": "我是含祉薇，马来亚大学计算机科学（多媒体计算）本科应届生。通过实习与课程项目，我使用 React、Next.js、TypeScript、Node.js 和 SQL 开发面向用户与内部的网页应用。我喜欢把想法做成可互动的数字体验，与设计师、开发者协作，并持续学习能真正把产品做好的技术。",
+    "educationTitle": "教育",
+    "educationDegree": "计算机科学学士（多媒体计算）",
+    "educationSchool": "马来亚大学",
+    "educationPeriod": "2023年10月 – 2027年3月",
+    "educationCgpa": "CGPA 3.80",
+    "interestsTitle": "兴趣方向",
+    "interests": ["网页开发", "全栈开发", "UI / UX", "多媒体"],
+    "focusTitle": "目前专注",
+    "focus": "完成最后一年学业，巩固近期实习中的全栈能力，并打磨能体现问题解决过程的作品集。",
+    "goalTitle": "职业方向",
+    "goal": "成为前端 / 全栈开发者与创意技术人，做出体验清晰、工程扎实的产品。",
+    "portraitAlt": "祉薇的插画头像"
+  },
+  "skills": {
+    "title": "技能与技术",
+    "eyebrow": "技术栈",
+    "placeholder": "技能区块即将上线。",
+    "logoLoopLabel": "我使用的技术",
+    "categories": {
+      "languages": "编程语言",
+      "frontend": "前端",
+      "backend": "后端与数据库",
+      "tools": "工具",
+      "multimedia": "多媒体"
+    }
+  },
+  "featuredProjects": {
+    "title": "精选项目",
+    "placeholder": "精选项目即将上线。",
+    "viewMore": "查看更多"
+  },
+  "contact": {
+    "title": "联系我",
+    "eyebrow": "一起合作",
+    "subtitle": "有项目或机会？欢迎联系我。",
+    "email": "邮箱",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "phone": "电话"
+  },
+  "projectsPage": {
+    "title": "全部项目",
+    "placeholder": "项目列表即将上线。"
+  },
+  "projectDetail": {
+    "back": "返回项目列表",
+    "notFound": "未找到该项目。"
+  },
+  "footer": {
+    "copyright": "© 2026 祉薇。保留所有权利。"
+  },
+  "language": {
+    "en": "EN",
+    "zh": "中文"
+  }
+}

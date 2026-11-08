@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hero",
+    "placeholder": "Hero section coming soon."
+  },
+  "about": {
+    "title": "About Me",
+    "eyebrow": "Who I am",
+    "introTitle": "Introduction",
+    "intro": "I'm Ham Zhi Wei, a final-year Bachelor of Computer Science (Multimedia Computing) student at the University of Malaya. Through internships and academic projects, I have built customer-facing and internal web apps with React, Next.js, TypeScript, Node.js, and SQL. I enjoy turning ideas into interactive digital experiences, collaborating with designers and developers, and learning technologies that help me ship products people actually want to use.",
+    "educationTitle": "Education",
+    "educationDegree": "Bachelor of Computer Science (Multimedia Computing)",
+    "educationSchool": "University of Malaya",
+    "educationPeriod": "Oct 2023 – Mar 2027",
+    "educationCgpa": "CGPA 3.80",
+    "interestsTitle": "Interests",
+    "interests": ["Web Development", "Full-stack", "UI / UX", "Multimedia"],
+    "focusTitle": "Current Focus",
+    "focus": "Completing my final year, strengthening full-stack skills from recent internships, and building a portfolio that shows how I solve real product problems.",
+    "goalTitle": "Career Goal",
+    "goal": "Grow as a frontend / full-stack developer and creative technologist, building products with clear UX and solid engineering.",
+    "portraitAlt": "Illustrated portrait of Zhi Wei"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "eyebrow": "What I work with",
+    "placeholder": "Skills section coming soon.",
+    "logoLoopLabel": "Technologies I use",
+    "categories": {
+      "languages": "Languages",
+      "frontend": "Frontend",
+      "backend": "Backend & Database",
+      "tools": "Tools",
+      "multimedia": "Multimedia"
+    }
+  },
+  "featuredProjects": {
+    "title": "Featured Projects",
+    "placeholder": "Featured projects coming soon.",
+    "viewMore": "View more"
+  },
+  "contact": {
+    "title": "Contact",
+    "eyebrow": "Let's connect",
+    "subtitle": "Have a project or opportunity? I'd love to hear from you.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "phone": "Phone"
+  },
+  "projectsPage": {
+    "title": "All Projects",
+    "placeholder": "Project list coming soon."
+  },
+  "projectDetail": {
+    "back": "Back to projects",
+    "notFound": "Project not found."
+  },
+  "footer": {
+    "copyright": "© 2026 Zhi Wei. All rights reserved."
+  },
+  "language": {
+    "en": "EN",
+    "zh": "中文"
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" fill="none">
+  <rect width="800" height="480" rx="24" fill="#C8A9F5"/>
+  <rect x="48" y="48" width="704" height="384" rx="16" fill="#FFF9F4" opacity="0.55"/>
+  <circle cx="400" cy="220" r="64" fill="#7041C7"/>
+  <circle cx="460" cy="250" r="40" fill="#FF914D"/>
+  <text x="400" y="360" text-anchor="middle" fill="#251E30" font-family="Segoe UI, sans-serif" font-size="28" font-weight="600">
+    Project Cover
+  </text>
+</svg>

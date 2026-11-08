@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #7041c7;
+  --color-secondary: #c8a9f5;
+  --color-accent: #ff914d;
+
+  --color-background: #fff9f4;
+  --color-surface: #ffffff;
+  --color-text: #251e30;
+  --color-text-muted: #5c5368;
+  --color-dark: #302044;
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", "Noto Sans SC", sans-serif;
+
+  --radius-card: 20px;
+  --radius-button: 12px;
+
+  --section-spacing: 100px;
+  --nav-height: 72px;
+}
