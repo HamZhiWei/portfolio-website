@@ -1,5 +1,5 @@
 
-name: Portfolio CI
+name: Portfolio CI/CD
 
 # Trigger the workflow whenever code is pushed to main
 on:
