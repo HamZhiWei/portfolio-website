@@ -1,59 +1,65 @@
 
 name: Portfolio CI/CD
 
-# Trigger the workflow whenever code is pushed to main
 on:
   push:
     branches:
       - main
 
-  # Also allow manual execution from GitHub
   workflow_dispatch:
 
 jobs:
-  # Job 1: Build and check React application
+  # Job 1: Build React application
   build:
     name: Build React Application
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Download the repository code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # Step 4: Build React application
       - name: Build application
         run: npm run build
 
-  # Job 2: Build Docker image
+
+  # Job 2: Build and publish Docker image
   docker-build:
-    name: Build Docker Image
+    name: Build and Push Docker Image
     runs-on: ubuntu-latest
 
-    # Wait for Job 1 to succeed
     needs: build
 
     steps:
+      # Step 1: Download source code
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 2: Set up Docker Buildx
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build Docker image
+      # Step 3: Login to Docker Hub
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # Step 4: Build and push Docker image
+      - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
           context: .
-          push: false
-          tags: my-portfolio:latest
+          push: true
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/my-portfolio:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/my-portfolio:${{ github.sha }}
