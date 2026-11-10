@@ -1,0 +1,36 @@
+
+name: Portfolio CI
+
+# Trigger the workflow whenever code is pushed to main
+on:
+  push:
+    branches:
+      - main
+
+  # Also allow manual execution from GitHub
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build React Application
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Download the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Build React application
+      - name: Build application
+        run: npm run build
